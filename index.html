@@ -10,6 +10,23 @@
         body { background-color: #0A0A0A; color: #E3F6E3; font-family: 'Inter', sans-serif; }
         .btn-green { background-color: #24A148; }
         .btn-green:hover { background-color: #1E8F3C; }
+        ul.custom-bullets {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+        ul.custom-bullets li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.custom-bullets li::before {
+            content: "•";
+            color: #24A148;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.25rem;
+        }
     </style>
 </head>
 <body class="font-sans">
@@ -27,50 +44,57 @@
         </div>
     </section>
     
-    <!-- About Us -->
+    <!-- Our Mission -->
     <section class="py-24 px-12 bg-black text-center">
-        <h2 class="text-5xl font-bold text-green-400">About Us</h2>
+        <h2 class="text-5xl font-bold text-green-400">Our Mission</h2>
         <div class="max-w-4xl mx-auto mt-8 text-left">
-            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Our Mission</h3>
-            <p class="mt-4 text-lg text-gray-300 leading-relaxed">At Farm21, we believe that agriculture must evolve to meet the challenges of today and tomorrow. By integrating IoT, AI-driven analytics, and real-time monitoring, we enable farmers to grow more with less water, fewer resources, and greater efficiency.</p>
-        </div>
-        <div class="max-w-4xl mx-auto mt-8 text-left">
-            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">The Problem We Solve</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
-                <li><span class="font-bold text-green-400">Water Scarcity</span> – Over 60% of India’s groundwater is depleting.</li>
-                <li><span class="font-bold text-green-400">Climate Change</span> – Unpredictable weather patterns affect crop yields.</li>
-                <li><span class="font-bold text-green-400">Limited Technology Access</span> – Small farmers lack data-driven solutions.</li>
-                <li><span class="font-bold text-green-400">Market Inefficiencies</span> – Farmers struggle with unpredictable pricing and yield forecasting.</li>
+            <p class="mt-4 text-lg text-gray-300 leading-relaxed">Farm21 is on a mission to revolutionize agriculture through smart technology, making farming efficient, sustainable, and accessible to everyone—from urban dwellers to large-scale agribusinesses. With IoT, AI, and data-driven automation, we provide affordable, plug-and-play solutions that optimize resources, increase yields, and empower farmers with actionable insights.</p>
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Why It Matters</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li>50% of India’s workforce depends on agriculture, yet productivity remains low due to inefficient water use, climate change, and lack of technology.</li>
+                <li>Water scarcity affects 54% of Indian farmland, making precision irrigation critical for sustainable farming.</li>
+                <li>The smart agriculture market is projected to grow from $76.6M in 2023 to $218.9M by 2030 (CAGR 16.2%), showing a massive demand for tech-driven solutions.</li>
+                <li>By integrating IoT sensors, automated irrigation, and AI-driven analytics, Farm21 is building the future of farming—one that is smart, efficient, and sustainable.</li>
             </ul>
         </div>
+    </section>
+    
+    <!-- The Problem We Solve -->
+    <section class="py-24 px-12 bg-black text-center">
+        <h2 class="text-5xl font-bold text-green-400">The Problem We Solve</h2>
         <div class="max-w-4xl mx-auto mt-8 text-left">
-            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Our Story</h3>
-            <p class="mt-4 text-lg text-gray-300 leading-relaxed">Founded in 2024 by three college innovators, Farm21 was born from a passion for agriculture, sustainability, and technology. What started as a small prototype has now evolved into an intelligent, scalable farm management system that can be used from a single plant to a commercial-scale farm.</p>
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Agriculture’s Growing Challenges</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">Water Wastage</span> – Traditional irrigation methods waste up to 60% of water, depleting resources.</li>
+                <li><span class="font-bold text-green-400">Climate Change Impact</span> – Erratic weather patterns make crop planning unpredictable.</li>
+                <li><span class="font-bold text-green-400">Labor Shortages</span> – Farming remains labor-intensive, discouraging new generations from entering the sector.</li>
+                <li><span class="font-bold text-green-400">Technology Gap</span> – Many small and mid-sized farms lack access to precision agriculture tools.</li>
+                <li><span class="font-bold text-green-400">Post-Harvest Losses</span> – Nearly 30-40% of produce is lost due to poor storage and market inefficiencies.</li>
+            </ul>
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">How Farm21 Solves These Issues</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li>IoT-enabled sensors provide real-time environmental data for optimized resource use.</li>
+                <li>AI-driven automation reduces reliance on manual labor while increasing efficiency.</li>
+                <li>Smart irrigation and nutrient delivery systems cut water wastage by up to 50%.</li>
+                <li>Data-driven insights empower farmers to predict and prevent issues before they occur.</li>
+                <li>Farm21 transforms farming into a science, ensuring higher yields, lower costs, and greater sustainability.</li>
+            </ul>
         </div>
-    </section>
-    </section>
     </section>
     
     <!-- Technology & Solutions -->
     <section class="py-24 px-12 bg-green-950 text-center">
         <h2 class="text-5xl font-bold text-green-400">Technology & Solutions</h2>
         <div class="max-w-4xl mx-auto mt-8 text-left">
-        <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Smart Irrigation & Crop Management</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
-                <li><span class="font-bold text-green-400">IoT Sensors</span> – Monitor soil moisture, temperature, and humidity.</li>
-                <li><span class="font-bold text-green-400">Automated Irrigation</span> – Water only when needed, reducing waste.</li>
-                <li><span class="font-bold text-green-400">Predictive Analytics</span> – AI-driven insights optimize farming decisions.</li>
-                <li><span class="font-bold text-green-400">Remote Monitoring</span> – Control your farm from anywhere via our mobile app.</li>
-            </ul>
-        <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Scalable Farming Solutions</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
-                <li><span class="font-bold text-green-400">1 m² Smart Farm</span> – Perfect for homes, terrace gardens & urban dwellers.</li>
-                <li><span class="font-bold text-green-400">Container-Based Farming</span> – Small-scale, community-driven food production.</li>
-                <li><span class="font-bold text-green-400">Large-Scale Solutions</span> – Custom-built smart farms for commercial agriculture.</li>
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Advanced Technology Integration</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">IoT Sensors</span> – Monitor soil moisture, temperature, humidity, and light levels in real time.</li>
+                <li><span class="font-bold text-green-400">AI & Machine Learning</span> – Predict irrigation needs, detect crop health issues, and optimize nutrient supply.</li>
+                <li><span class="font-bold text-green-400">Automated Irrigation & Fertigation</span> – Smart water and fertilizer delivery reduces waste and maximizes yield.</li>
+                <li><span class="font-bold text-green-400">Mobile App & Cloud Connectivity</span> – Farmers can monitor and control farm conditions remotely.</li>
+                <li><span class="font-bold text-green-400">Scalable Design</span> – Solutions work for home gardens, urban farms, greenhouses, and large-scale fields.</li>
             </ul>
         </div>
-    </section>
-    </section>
     </section>
     
     <!-- Products & Services -->
@@ -99,36 +123,75 @@
     <section class="py-24 px-12 bg-green-950 text-center">
         <h2 class="text-5xl font-bold text-green-400">Impact & Sustainability</h2>
         <div class="max-w-4xl mx-auto mt-8 text-left">
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Building a Greener Future with Smart Farming</h3>
+            <p class="mt-4 text-lg text-gray-300 leading-relaxed">Farm21 is committed to making agriculture more sustainable, efficient, and accessible. By leveraging cutting-edge technology, we aim to address global challenges such as water scarcity, climate change, and food security.</p>
+            
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Sustainability Highlights</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">50% reduction in water usage</span> through smart irrigation systems.</li>
+                <li><span class="font-bold text-green-400">Lower carbon footprint</span> by promoting urban and local food production.</li>
+                <li><span class="font-bold text-green-400">Waste reduction</span> with data-driven fertilizer and pesticide application.</li>
+                <li><span class="font-bold text-green-400">Enhanced food security</span> with higher crop yields and year-round production.</li>
+            </ul>
+
             <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Water Conservation</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
                 <li><span class="font-bold text-green-400">Reduce water usage by 50%</span> with precision irrigation.</li>
                 <li><span class="font-bold text-green-400">Collect & store rainwater</span> for sustainable farming.</li>
             </ul>
+
             <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Empowering Farmers</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
                 <li><span class="font-bold text-green-400">Data-driven decision-making</span> boosts yield & profits.</li>
                 <li><span class="font-bold text-green-400">Market insights & weather forecasting</span> ensure better planning.</li>
             </ul>
+
             <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">Climate Change Mitigation</h3>
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
                 <li><span class="font-bold text-green-400">AI-driven crop rotation</span> to improve soil health.</li>
                 <li><span class="font-bold text-green-400">Minimized use of chemical fertilizers & pesticides.</span></li>
             </ul>
+
             <p class="mt-6 text-lg font-bold text-green-400"><a href='sustainability-report.html' class='underline'>See Our Impact → Sustainability Report</a></p>
         </div>
     </section>
-    
+        
     <!-- Get Involved -->
     <section class="py-24 px-12 bg-black text-center">
         <h2 class="text-5xl font-bold text-green-400">Get Involved</h2>
         <div class="max-w-4xl mx-auto mt-8 text-left">
-            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed">
-                <li><span class="font-bold text-green-400">🌱 Farmers</span> – Upgrade your farm with smart tech. <a href='get-started.html' class='text-green-400 underline'>Get Started</a></li>
-                <li><span class="font-bold text-green-400">💰 Investors</span> – Be part of the agri-tech revolution. <a href='learn-more.html' class='text-green-400 underline'>Learn More</a></li>
-                <li><span class="font-bold text-green-400">🛠 Developers & Researchers</span> – Join us in innovating the future. <a href='collaborate.html' class='text-green-400 underline'>Collaborate</a></li>
+            <p class="mt-4 text-lg text-gray-300 leading-relaxed">Farm21 is shaping the future of smart farming, and we invite investors, farmers, researchers, and the media to join us in this movement.</p>
+
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">For Investors</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">$588M+ Indian smart agri-market</span>, projected to grow to $3.7B by 2032.</li>
+                <li><span class="font-bold text-green-400">Scalable B2B & B2C revenue model</span> ensures diverse revenue streams.</li>
+                <li><span class="font-bold text-green-400">Strong market differentiation</span> with affordable, localized solutions.</li>
             </ul>
+
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">For Farmers</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">Affordable technology</span> that increases productivity without requiring technical expertise.</li>
+                <li><span class="font-bold text-green-400">Higher yields with lower costs</span> through AI-driven precision farming.</li>
+                <li><span class="font-bold text-green-400">Government & NGO partnerships</span> for subsidies and financial support.</li>
+            </ul>
+
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">For Developers & Researchers</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">Open API & collaboration opportunities</span> for advancing agri-tech.</li>
+                <li><span class="font-bold text-green-400">Pilot projects and partnerships</span> with universities and research institutions.</li>
+                <li><span class="font-bold text-green-400">Real-world data access</span> to test and develop next-gen smart farming solutions.</li>
+            </ul>
+
+            <h3 class="text-3xl font-semibold text-white mt-8 border-l-4 border-green-400 pl-4">For Media</h3>
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">A growing agri-tech startup</span> solving India’s biggest farming challenges.</li>
+                <li><span class="font-bold text-green-400">Innovative stories</span> on how IoT, AI, and automation are transforming agriculture.</li>
+                <li><span class="font-bold text-green-400">Exclusive access</span> to interviews, case studies, and pilot project insights.</li>
+            </ul>
+
+            <p class="mt-8 text-lg font-bold text-green-400">Join us in transforming agriculture for a sustainable future.</p>
         </div>
-    </section>
     </section>
     
     <!-- Contact & Support -->
