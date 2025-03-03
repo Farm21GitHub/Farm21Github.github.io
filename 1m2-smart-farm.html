@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1m² Smart Farm - Farm21</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #0A0A0A; color: #E3F6E3; font-family: 'Inter', sans-serif; }
+        .btn-green { background-color: #24A148; }
+        .btn-green:hover { background-color: #1E8F3C; }
+        ul.custom-bullets {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+        ul.custom-bullets li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.custom-bullets li::before {
+            content: "•";
+            color: #24A148;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.25rem;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Hero Section -->
+    <section class="h-screen relative">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center px-6">
+            <h1 class="text-6xl font-extrabold text-white">1m² Smart Farm</h1>
+            <p class="mt-2 text-2xl font-bold text-green-400">Perfect for Urban Households</p>
+            <p class="mt-4 text-lg font-bold text-gray-300">Grow fresh produce in the comfort of your home with our compact, smart farming solution.</p>
+            <a href="#features" class="mt-6 px-6 py-3 text-lg font-semibold btn-green rounded-lg">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-12 bg-black text-center">
+        <h2 class="text-5xl font-bold text-green-400">Features</h2>
+        <div class="max-w-4xl mx-auto mt-8 text-left">
+            <ul class="mt-4 text-lg text-gray-300 space-y-3 leading-relaxed custom-bullets">
+                <li><span class="font-bold text-green-400">Compact Design</span> – Fits in small spaces like balconies, kitchens, or rooftops.</li>
+                <li><span class="font-bold text-green-400">Automated Irrigation</span> – Ensures optimal water usage for your plants.</li>
+                <li><span class="font-bold text-green-400">Smart Monitoring</span> – Track soil moisture, light, and temperature via a mobile app.</li>
+                <li><span class="font-bold text-green-400">Plug-and-Play</span> – Easy to set up and use, even for beginners.</li>
+                <li><span class="font-bold text-green-400">Sustainable</span> – Grow fresh produce year-round with minimal environmental impact.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-gray-900 text-gray-400">
+        <p>&copy; 2025 Farm21. All rights reserved.</p>
+    </footer>
+</body>
+</html>
